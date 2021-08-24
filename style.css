@@ -89,18 +89,38 @@ canvas, .overLay{
 #unity-warning, #unity-footer{
     display: none;
 }
-.overLay{
-    height: auto;
-    width: auto;
+.chat-history{
+    height: 350px;
+    width: 375px;
     position: absolute;
-    z-index:2;
-    display: flex;
+    padding:10px;
+    z-index: 2;
+    display: block;
+    overflow-y: scroll;
+
 }
 
-.npc-buble{
+.npc-bubble, .pc-bubble{
+    min-height: 20px;
+    min-width: 20px;
+    max-width: 140px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom:40px;
+}
 
+.npc-bubble{
+    background-color: cyan;
+}
+
+.npc-bubble:first-child{
+    margin-top:310px;
 }
 
 .pc-bubble{
-    
+    background-color: darkcyan;
+    margin-left: auto;
+    text-align: end;
 }
