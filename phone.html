@@ -30,6 +30,7 @@
         const womenBtn = document.querySelector('#women');
         const phoneScreen = document.querySelector('#screen');
         const backBtn = document.querySelector('.backBtn');
+        const r00tLnk = window.location.href.replace('phone.html', 'WebGLBuild');
 
 
 
@@ -57,7 +58,8 @@
 
         homelessBtn.addEventListener('click', function(){
             phoneScreen.innerHTML = '';
-            loadTxtMsg('homeless')
+            // loadTxtMsg('homeless')
+            window.location.replace(r00tLnk+'/homeless.html')
         })
 
         backBtn.addEventListener('click', function(){
