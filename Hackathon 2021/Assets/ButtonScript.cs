@@ -5,30 +5,46 @@ using UnityEngine.UIElements;
 
 public class ButtonScript : MonoBehaviour
 {
-    Button[] buttons;
-    Transform[] knappar;
-    
+    GameObject[] knappar;
+    int index;
+
+
     void Start()
     {
-/*        buttons = FindObjectsOfType<Button>();
-
-        gameObje*/
-
-        knappar = GetComponentsInChildren<Transform>();
+        index = 0;
+        knappar = GameObject.FindGameObjectsWithTag("Knappar");
+        TurnOffAllButtons();
+        TurnOnNextButton(0);
     }
 
-    void Update()
-    {
-        
-    }
-
-    public void TurnOffButton()
+    void TurnOffAllButtons()
     {
         for (int i = 0; i < knappar.Length; i++)
         {
-            print("Det finns " + i + " knappar");
+            knappar[i].SetActive(false);
+        }
+    }
+
+    public void SwitchButtons()
+    {
+        TurnOffButton(index);
+        index++;
+
+        if (index >= knappar.Length)
+        {
+            return;
         }
 
-        knappar[0].gameObject.SetActive(false);
+        TurnOnNextButton(index);
+    }
+
+    public void TurnOffButton(int privateIndex)
+    {
+        knappar[privateIndex].SetActive(false);
+    }
+
+    public void TurnOnNextButton(int privateIndex)
+    {
+        knappar[privateIndex].SetActive(true);
     }
 }
