@@ -1,64 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <title>Hackathon 2021</title>
-      <link rel="shortcut icon" href="TemplateData/favicon.ico">
-      <link rel="stylesheet" href="TemplateData/style.css">
-      <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Hackathon 2021</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <figure>
-      <img class="phone" src='assets/Phone_Base.png' alt='phone'>
-    </figure>
     <div id="unity-container" class="unity-desktop">
-
-      <!-- ///////////////////////////////////////////////////////////////////////// -->
-          
-
-            
-        
-
-      <section class="chat-history">
-        <p class="npc-bubble">Wazzup? Gör du något ikväll?</p>
-        <p class="pc-bubble" style="width: 40px;">Hurså?</p>
-
-        <p class="npc-bubble" style="width: 100px;">Nä, undra bara</p>
-        <p class="pc-bubble">Är bänken för hård?</p>
-
-        <p class="npc-bubble" style="width: 20px;">Typ</p>
-        <p class="pc-bubble">Ingen kudde under armen?</p>
-
-        <p class="npc-bubble" style="width: 20px;">...</p>
-        <p class="pc-bubble" style="width: 50px;">35:an?</p>
-
-        <p class="npc-bubble">Går inte hos dig, då?</p>
-        <p class="npc-bubble" style="width: 110px;">Mer sällskapligt</p>
-        <p class="pc-bubble">Du har ingen skitig kartong?</p>
-
-        <p class="npc-bubble" style="width: 20px;">Va?</p>
-        
-        <p class="npc-bubble" style="width: 30px;">Hallå?</p>
-
-        <p class="npc-bubble" style="width: 110px;">Kan du svara???</p>
-        <p class="pc-bubble" style="width: 120px;">Det här är skitkul, lovar</p>
-        <p class="pc-bubble" style="width: 100px;">Är du utanför?</p>
-        <p class="pc-bubble">För tänker att vi slaggar på 35:an tsm</p>
-        <p class="npc-bubble" style="width: 20px;">&#129392;</p>
-
-
-
-        
-      </section>
-
-
-
-      <!-- ////////////////////////////////////////////////////////////////////////// -->
-
-
       <canvas id="unity-canvas" width=395 height=500></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -89,7 +39,7 @@
       // user.
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
-          warningBanner.style.display =  'none';
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         }
         var div = document.createElement('div');
         div.innerHTML = msg;
