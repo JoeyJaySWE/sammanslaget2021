@@ -124,3 +124,58 @@ canvas, .overLay{
     margin-left: auto;
     text-align: end;
 }
+
+#screen{
+    border: 1px solid red;
+    height: 496px;
+    width: 390px;
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+nav button {
+    width: 100%;
+    height: 60px;
+    background-color: #3f3fe0;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+nav button:hover{
+    background-color: #2f2fc7;
+}
+
+.backBtn{
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    height: 50px;
+    opacity: 0.0;
+    transform: translateX(-290%);
+    width: 50px;
+}
+.backBtn:hover{
+    opacity: 0.3;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+
+}

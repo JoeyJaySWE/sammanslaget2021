@@ -21,12 +21,15 @@
               <button id='women'>Kvinnoverksamheten</button>
           </nav>
       </section>
+
+      <button class='backBtn'></button>
       <script>
 
         const homelessBtn = document.querySelector('#homeless');
         const prissonerBtn = document.querySelector('#prissoner');
         const womenBtn = document.querySelector('#women');
         const phoneScreen = document.querySelector('#screen');
+        const backBtn = document.querySelector('.backBtn');
 
 
 
@@ -37,7 +40,7 @@
 
             // fetch(story+'.html')
             // fetch('index copy.html')
-            fetch('index.html')
+            fetch('WebGlBuild/index.html')
             .then(response => response.text())
             .then(function (html){
                 const parser = new DOMParser();
@@ -53,7 +56,12 @@
         }
 
         homelessBtn.addEventListener('click', function(){
+            phoneScreen.innerHTML = '';
             loadTxtMsg('homeless')
+        })
+
+        backBtn.addEventListener('click', function(){
+            location.reload();
         })
 
       </script>
