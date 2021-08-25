@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <title>Hackathon 2021</title>
-      <link rel="shortcut icon" href="TemplateData/favicon.ico">
-      <link rel="stylesheet" href="TemplateData/style.css">
-      <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hackathon 2021</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <figure>
-      <img class="phone" src='assets/Phone_Base.png' alt='phone'>
-    </figure>
     <div id="unity-container" class="unity-desktop">
 
       <!-- ///////////////////////////////////////////////////////////////////////// -->
@@ -72,7 +67,7 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Hackathon 2021</div>
       </div>
-    </div>
+    
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -89,7 +84,7 @@
       // user.
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
-          warningBanner.style.display =  'none';
+          warningBanner.style.display =  'block';
         }
         var div = document.createElement('div');
         div.innerHTML = msg;
@@ -167,5 +162,6 @@
       };
       document.body.appendChild(script);
     </script>
+    </div>
   </body>
 </html>

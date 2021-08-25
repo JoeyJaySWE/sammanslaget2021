@@ -48,6 +48,9 @@ table {
 }
 
 
+*{
+    box-sizing: border-box;
+}
 
 canvas{
     width: 605px;
@@ -123,4 +126,39 @@ canvas, .overLay{
     background-color: darkcyan;
     margin-left: auto;
     text-align: end;
+}
+
+#screen{
+
+    position: absolute;
+    top: 387px;
+    left: 50%;
+    border: 1px solid red;
+    height: 500px;
+    width: 390px;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+nav button{
+    height: 60px;
+    width: 75%;
+    border-radius: 15px;
+    color:white;
+    background-color:#5d5dfb;
+}
+
+nav button:hover{
+    cursor: pointer;
+    background-color: #4646c5;
 }
