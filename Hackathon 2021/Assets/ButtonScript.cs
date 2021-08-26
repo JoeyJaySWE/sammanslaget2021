@@ -5,16 +5,28 @@ using UnityEngine.UIElements;
 
 public class ButtonScript : MonoBehaviour
 {
-    GameObject[] knappar;
+    public GameObject[] knappar;
     int index;
 
 
-    void Start()
+    private void Awake()
     {
         index = 0;
-        knappar = GameObject.FindGameObjectsWithTag("Knappar");
+    }
+
+    void Start()
+    {
         TurnOffAllButtons();
         TurnOnNextButton(0);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            Debug.Log(index);
+            Debug.Log(knappar[index].name);
+        }
     }
 
     void TurnOffAllButtons()
@@ -27,6 +39,9 @@ public class ButtonScript : MonoBehaviour
 
     public void SwitchButtons()
     {
+        Debug.Log(index);
+        Debug.Log(knappar[index].name);
+
         TurnOffButton(index);
         index++;
 
@@ -35,8 +50,19 @@ public class ButtonScript : MonoBehaviour
             return;
         }
 
+        StartCoroutine(DelayFunction(2f));
+
+        Debug.Log(index);
+        Debug.Log(knappar[index].name);
+    }
+
+    public IEnumerator DelayFunction(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
         TurnOnNextButton(index);
     }
+
 
     public void TurnOffButton(int privateIndex)
     {

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: dacbdee94a54a264d90b8bf945fe87d4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Lota Grotesque
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88d9d515c843adb479c8f03561d6cf93, type: 3}
+  - {fileID: 12800000, guid: 828129afdb3e2564daaaf887e04b05ef, type: 3}
+  - {fileID: 12800000, guid: 5061ad2b9270b2f4faa7898d606d0a86, type: 3}
+  - {fileID: 12800000, guid: d6af188ddc4915944972b62988bb8000, type: 3}
+  - {fileID: 12800000, guid: d24e5827d1c379f4cbbcc66edcb3b657, type: 3}
+  - {fileID: 12800000, guid: 142d88ef98fa9624490a49e6283b0313, type: 3}
+  - {fileID: 12800000, guid: 3717b699846cb184687b61ce9a1a7ea0, type: 3}
+  - {fileID: 12800000, guid: 0388d5ff09eae0d408780de08fad603a, type: 3}
+  - {fileID: 12800000, guid: 74e0845ade4e76a44bebb6bb21c2e1df, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
