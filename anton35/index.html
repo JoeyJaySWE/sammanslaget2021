@@ -88,13 +88,19 @@
         updateBannerVisibility();
       }
       const chatHistory = document.querySelector('.chat-history');
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AntonBuild.loader.js";
+      var loaderUrl = "AntonBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/AntonBuild.data",
-        frameworkUrl: buildUrl + "/AntonBuild.framework.js",
-        codeUrl: buildUrl + "/AntonBuild.wasm",
+        dataUrl: "AntonBuild.data",
+        frameworkUrl: "AntonBuild.framework.js",
+        codeUrl: "AntonBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
+      // var buildUrl = "Build";
+      // var loaderUrl = buildUrl + "/AntonBuild.loader.js";
+      // var config = {
+      //   dataUrl: buildUrl + "/AntonBuild.data",
+      //   frameworkUrl: buildUrl + "/AntonBuild.framework.js",
+      //   codeUrl: buildUrl + "/AntonBuild.wasm",
+      //   streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Hackathon 2021",
         productVersion: "1.0",
