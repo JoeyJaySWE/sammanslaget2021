@@ -63,6 +63,7 @@ html{
     background-image: linear-gradient(
 38deg
 , #e07c3f, #ffb485, #e07c3f);
+overflow:hidden;
 }
 
 canvas{
@@ -151,6 +152,21 @@ canvas, .overLay{
     transform: translateY(40px);
 }
 
+.donation-buble{
+    background-color: #e07c3f;
+    color: whitesmoke;
+    position: absolute;
+    border-radius: 15px;
+    border: 6px solid #bd500c;
+    padding: 5px;
+    width: 300px;
+    left: 50%;
+    line-height: 1.2;
+    z-index: 3;
+    transform: translateX(-50%) translateY(-140px);
+    transition: transfrom 2000ms ease-out;
+}
+
 #screen{
     height: 496px;
     width: 389px;
@@ -226,7 +242,9 @@ button:hover{
     /* opacity: 0.8; */
 }
 
+
 #messageBar:hover img{
     border: 2px solid #a3a1ef;
     border-radius: 15px;
+    cursor: text;
 }

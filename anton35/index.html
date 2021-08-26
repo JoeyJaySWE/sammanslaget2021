@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Anton 35</title>
+    <title>Anton 35 | Hackathon 2021</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="../style.css">
@@ -13,25 +13,34 @@
       <img class="phone" src='../assets/Phone_Base.png' alt='phone'>
     </figure>
     <div id="unity-container" class="unity-desktop">
-        <!-- ///////////////////////////////////////////////////////////////////////// -->
+              <!-- ///////////////////////////////////////////////////////////////////////// -->
      
 
       
   
 
-          <section class="chat-history" style='opacity: 0.0;'>
+              <section class="chat-history" style='opacity: 0.0;'>
+                <p class="donation-buble">
+                  Vi på Räddningsmisskon jobbar meddelande som dessa dagligen.<br>
+                  Stöd gärna vårat fortsatta arbete för utsatta.
+                  <a href='https://raddningsmissionen.se/gava' target="_blank">Ge Gåva</a>
+                  Tryck på tillbaka pilen för att välja anna story.
+                </p>
+                <div id="msgs">
+
+                </div>
 
 
 
         
         
-            <button id='messageBar'>
-              <img src="../assets/Phone Messege Textbox.png" alt="fake-message-bar">
-              <img src="../assets/Phone Mail Icon.png" alt="fake-send-btn">
-            </button>
-          </section>
-      
-        <!-- ////////////////////////////////////////////////////////////////////////// -->
+                <button id='messageBar'>
+                  <img src="../assets/Phone Messege Textbox.png" alt="fake-message-bar">
+                  <img src="../assets/Phone Mail Icon.png" alt="fake-send-btn">
+                </button>
+              </section>
+          
+            <!-- ////////////////////////////////////////////////////////////////////////// -->
       <canvas id="unity-canvas" width=390 height=500></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -63,7 +72,7 @@
       // user.
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
-          warningBanner.style.display =  'none';
+          warningBanner.style.display = 'none';
         }
         var div = document.createElement('div');
         div.innerHTML = msg;
@@ -80,11 +89,11 @@
       }
       const chatHistory = document.querySelector('.chat-history');
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var loaderUrl = buildUrl + "/AntonBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGLBuild.data",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js",
-        codeUrl: buildUrl + "/WebGLBuild.wasm",
+        dataUrl: buildUrl + "/AntonBuild.data",
+        frameworkUrl: buildUrl + "/AntonBuild.framework.js",
+        codeUrl: buildUrl + "/AntonBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Hackathon 2021",
@@ -137,7 +146,7 @@
           };
           setTimeout(() => {
 
-            chatHistory.style.opacity = 1.0;
+          chatHistory.style.opacity = 1.0;
           }, 1700);
         }).catch((message) => {
           alert(message);
