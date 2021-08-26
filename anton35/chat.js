@@ -69,11 +69,17 @@ let PcBubleCounter = 0;
 unityBtns.addEventListener('click', (e) =>{
     console.log(e.clientX);
     console.log(e.clientY);
+    let dim = e.target.getBoundingClientRect();
+    let posX = e.clientX - dim.left;
+    let posY = e.clientY - dim.top;
+    console.log({posX});
+    console.log({posY});
 
-
-    if(e.clientX > 354 && e.clientX < 666){
-        if(e.clientY > 400 && e.clientY < 475){
+    if(posX > 40 && posX < 351){
+        console.log("right size");
+        if(posY> 270 && posY < 335){
             console.log("clicked btn1");
+            console.log("right height");
             msgBar.click();
             if(PcBubleCounter <= 4){
 
