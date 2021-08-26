@@ -16,17 +16,23 @@
 
       <section id="screen">
           <nav>
-              <button id='homeless'>Hemlösheten</button>
-              <button id='prissoner'>Firhetsberövaden</button>
+              <button id='homeless'>Anton 35</button>
+              <button id='sunflower'>Maria och Solrosen</button>
               <button id='women'>Kvinnoverksamheten</button>
+              <button id='credits' style='margin-top:40px;'>(Galen)Skaparna</button>
           </nav>
       </section>
+
+      <button class='backBtn'></button>
       <script>
 
         const homelessBtn = document.querySelector('#homeless');
-        const prissonerBtn = document.querySelector('#prissoner');
+        const prissonerBtn = document.querySelector('#sunflower');
         const womenBtn = document.querySelector('#women');
         const phoneScreen = document.querySelector('#screen');
+        const creditBtn = document.querySelector('#credits');
+        const backBtn = document.querySelector('.backBtn');
+        const r00tLnk = window.location.href.replace('phone.html', 'WebGLBuild');
 
 
 
@@ -37,7 +43,7 @@
 
             // fetch(story+'.html')
             // fetch('index copy.html')
-            fetch('index.html')
+            fetch('WebGlBuild/index.html')
             .then(response => response.text())
             .then(function (html){
                 const parser = new DOMParser();
@@ -53,7 +59,17 @@
         }
 
         homelessBtn.addEventListener('click', function(){
-            loadTxtMsg('homeless')
+            phoneScreen.innerHTML = '';
+            // loadTxtMsg('homeless')
+            window.location.replace(r00tLnk+'/homeless.html')
+        })
+
+        creditBtn.addEventListener('click', function(){
+            window.location.href = 'credits.html';
+        })
+
+        backBtn.addEventListener('click', function(){
+            location.reload();
         })
 
       </script>
