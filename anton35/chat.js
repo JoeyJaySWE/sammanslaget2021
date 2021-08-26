@@ -102,10 +102,7 @@ unityBtns.addEventListener('click', (e) =>{
                 npsBubleCounter++;
                 console.log("bonus:"+npsBubleCounter);
             }
-            // if(PcBubleCounter == 3){
-            //     addPcMsg(pcMsg[PcBubleCounter]);
-            //     PcBubleCounter++;
-            // }
+
             
             
         }
