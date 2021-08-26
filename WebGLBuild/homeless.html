@@ -55,6 +55,7 @@
         
         <button id='messageBar'>
           <img src="../assets/Phone Messege Textbox.png" alt="fake-message-bar">
+          <img src="../assets/Phone Mail Icon.png" alt="fake-send-btn">
         </button>
       </section>
 
@@ -203,13 +204,13 @@
           
           console.log(msgBarPos); // (1, 0, 0, 1, 0, 350)
           console.log(chatHeight);
-          if(chatHeight === 500){
+          if(chatHeight === 450){
             chatHistory.style.height = "310px";
             msgBar.style.transform = "translateY(330px)";
             console.log(chatHistory.offsetHeight);
           }
-          else if(chatHeight <= 390){
-            chatHistory.style.height = "480px";
+          else if(chatHeight == 330){
+            chatHistory.style.height = "430px";
             console.log({chatHeight});
             msgBar.style.transform = "translateY(453px)";
           }
