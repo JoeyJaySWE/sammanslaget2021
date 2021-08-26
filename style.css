@@ -110,6 +110,7 @@ canvas, .overLay{
 .chat-history{
     height:430px;
     /* height: 350px; */
+    background-image: url('assets/Background\ Markings.png');
     background-color: #222323;
     width: 375px;
     position: absolute;
@@ -151,11 +152,12 @@ canvas, .overLay{
 }
 
 #screen{
-    border: 1px solid red;
     height: 496px;
-    width: 390px;
+    width: 389px;
+    background-image: url('assets/Background\ Markings.png');
+    background-color: #222323;
     position: absolute;
-    top: 138px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -187,11 +189,11 @@ nav button:hover{
 
 .backBtn{
     position: absolute;
-    top: 650px;
+    top: 500px;
     left: 50%;
     height: 50px;
-    opacity: 0.0;
-    transform: translateX(-290%);
+    opacity: 0;
+    transform: translateX(-129px);
     width: 50px;
 }
 .backBtn:hover{

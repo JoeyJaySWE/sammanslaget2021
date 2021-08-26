@@ -21,9 +21,10 @@
               <button id='women'>Kvinnoverksamheten</button>
               <button id='credits' style='margin-top:40px;'>(Galen)Skaparna</button>
           </nav>
+          <button class='backBtn'></button>
       </section>
 
-      <button class='backBtn'></button>
+      
       <script>
 
         const homelessBtn = document.querySelector('#homeless');
@@ -32,7 +33,7 @@
         const phoneScreen = document.querySelector('#screen');
         const creditBtn = document.querySelector('#credits');
         const backBtn = document.querySelector('.backBtn');
-        const r00tLnk = window.location.href.replace('phone.html', 'WebGLBuild');
+        const r00tLnk = window.location.href.replace('phone.html', '');
 
 
 
@@ -61,7 +62,7 @@
         homelessBtn.addEventListener('click', function(){
             phoneScreen.innerHTML = '';
             // loadTxtMsg('homeless')
-            window.location.replace(r00tLnk+'/homeless.html')
+            window.location.replace(r00tLnk+'anton35/index.html')
         })
 
         creditBtn.addEventListener('click', function(){
