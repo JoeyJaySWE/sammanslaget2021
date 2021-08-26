@@ -18,7 +18,7 @@ const pcMsg = [
 const npcBuble = document.createElement("P");
 npcBuble.classList.add("npc-bubble");
 
-const donation = document.querySelector("donation-buble");
+
 
 const messageWrap = document.querySelector("#msgs");
 
@@ -81,7 +81,7 @@ unityBtns.addEventListener('click', (e) =>{
                 PcBubleCounter++;
             }
             else{
-                donation.style.transform = 'translateX(-50%) translateY(0px)';
+                
             }
             if(npsBubleCounter <5){
                 
