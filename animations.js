@@ -4,7 +4,7 @@ chatHistory.scrollTop = chatHistory.scrollHeight - chatHistory.clientHeight;
 const backBtn = document.querySelector('.backBtn');
 backBtn.addEventListener('click', function() {
   
-  window.location.replace('https://sammanslaget-seven.vercel.app/');
+  window.location.replace('https://under-samma-himmel.netlify.app/');
 })
 
 
