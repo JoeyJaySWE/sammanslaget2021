@@ -248,3 +248,78 @@ button:hover{
     border-radius: 15px;
     cursor: text;
 }
+
+
+
+/* Credits */
+nav.credits-nav {
+    background-color: #0a0a0abd;
+    justify-content: end;
+    width: 83px;
+    height: 100%;
+    margin-top: 0px;
+    transform: unset;
+    margin-left: 0px;
+}
+
+nav.credits-nav hr{
+    width: 53px;
+    height: 1px;
+    background-color: #fff;
+}
+
+nav.credits-nav button{
+    background: transparent;
+    width: 100%;
+    height: 83px;
+    border: none;
+    padding: 0px;
+}
+
+nav.credits-nav button img{
+    max-width: 53px;
+
+}
+
+#screen.credits{
+    background-color: #0a0a0abd;
+    background-image: url('assets/Phone\ Background.png');
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#screen.credits article{
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0abd;
+    color:whitesmoke;
+}
+article h1{
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    font-family: 'Lota';
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+article h2{
+    font-size: 1.2rem;
+}
+article p{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+article div.paper{
+    background-color: #8080805e;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 1.3;
+    height: 430px;
+    overflow-y: scroll;
+}

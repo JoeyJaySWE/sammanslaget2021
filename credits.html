@@ -14,11 +14,30 @@
         <img class="phone" src='assets/Phone_Base.png' alt='phone'>
       </figure>
 
-      <section id="screen">
+      <section id="screen" class='credits'>
         <nav class="credits-nav">
-
+            <button class='yrgo-btn'><img src="assets/Yrgo IKON.png" alt="Yrgo Logo"></button>
+            <button class='rm-btn'><img src="assets/RM Ikon.png" alt="Räddningsmissionen Logo"></button>
+            <hr>
+            <button class='ga-btn'><img src="assets/GA Ikon.png" alt="Game Artist"></button>
+            <button class='gp-btn'><img src="assets/GP Ikon.png" alt="Game Programmer"></button>
+            <button class='mf-btn'><img src="assets/MF Ikon.png" alt="Manus Författare"></button>
+            <button class='ux-btn'><img src="assets/UX Ikon.png" alt="User Experience"></button>
+            <button class='wu-btn'><img src="assets/WU Ikon.png" alt="Webbutvecklare"></button>
         </nav>
-        <article></article>
+        <article>
+            <h1>SKAPARNA</h1>
+            <div class='paper'>
+                <h2 id="content-title">Under samma himmel</h2>
+                <p id="text-space">
+                    Höstkväll i Göteborg. Det plingar till i  en mobil.
+                    Skärmen lyser upp och kastar för en stund ljus på det vi sällan ser
+                    - utsatthetens många ansikten.
+                    Ibland är allt som behövs bara en konversation.
+                </p>
+                <a class='contact-info' style="color:orange;" href=''></a>
+            </div>
+        </article>
           <button class='backBtn'></button>
       </section>
 
@@ -31,7 +50,7 @@
         const phoneScreen = document.querySelector('#screen');
         const creditBtn = document.querySelector('#credits');
         const backBtn = document.querySelector('.backBtn');
-        const r00tLnk = window.location.href.replace('phone.html', '');
+        const r00tLnk = window.location.href.replace('credits.html', 'phone.html');
 
 
 
@@ -57,20 +76,14 @@
 
         }
 
-        homelessBtn.addEventListener('click', function(){
-            phoneScreen.innerHTML = '';
-            // loadTxtMsg('homeless')
-            window.location.replace(r00tLnk+'anton35/index.html')
-        })
 
-        creditBtn.addEventListener('click', function(){
-            window.location.href = 'credits.html';
-        })
+
 
         backBtn.addEventListener('click', function(){
-            location.reload();
+            window.location.href = r00tLnk;
         })
 
       </script>
+      `<script src="credits.js"></script>
 </body>
 </html>
