@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Hackathon 2021</title>
+    <title>Anton 35</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="../style.css">
@@ -13,31 +13,25 @@
       <img class="phone" src='../assets/Phone_Base.png' alt='phone'>
     </figure>
     <div id="unity-container" class="unity-desktop">
-
-
-
-      <!-- ///////////////////////////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////////////////////////////////////////// -->
      
 
       
   
 
-      <section class="chat-history" style='opacity: 0.0;'>
+          <section class="chat-history" style='opacity: 0.0;'>
 
 
 
         
         
-        <button id='messageBar'>
-          <img src="../assets/Phone Messege Textbox.png" alt="fake-message-bar">
-          <img src="../assets/Phone Mail Icon.png" alt="fake-send-btn">
-        </button>
-      </section>
-
-      <!-- ////////////////////////////////////////////////////////////////////////// -->
-
-
-
+            <button id='messageBar'>
+              <img src="../assets/Phone Messege Textbox.png" alt="fake-message-bar">
+              <img src="../assets/Phone Mail Icon.png" alt="fake-send-btn">
+            </button>
+          </section>
+      
+        <!-- ////////////////////////////////////////////////////////////////////////// -->
       <canvas id="unity-canvas" width=390 height=500></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -51,8 +45,8 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Hackathon 2021</div>
       </div>
+      <button class='backBtn'></button>
     </div>
-    <button class='backBtn'></button>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -60,8 +54,6 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
-
-      loadingBar.style.display = "none";
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -71,7 +63,7 @@
       // user.
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
-          warningBanner.style.display = 'none';
+          warningBanner.style.display =  'none';
         }
         var div = document.createElement('div');
         div.innerHTML = msg;
@@ -86,7 +78,6 @@
         }
         updateBannerVisibility();
       }
-
       const chatHistory = document.querySelector('.chat-history');
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
@@ -141,11 +132,9 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
-         
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
-          
           setTimeout(() => {
 
             chatHistory.style.opacity = 1.0;
@@ -156,45 +145,7 @@
       };
       document.body.appendChild(script);
     </script>
-    <script>
-
-        chatHistory.scrollTop = chatHistory.scrollHeight - chatHistory.clientHeight;
-
-        const backBtn = document.querySelector('.backBtn');
-        backBtn.addEventListener('click', function() {
-          
-          window.location.replace('http://127.0.0.1:5500/phone.html');
-        })
-
-
-        const msgBar = document.querySelector('#messageBar');
-
-        msgBar.addEventListener('click', function() {
-          let chatHeight = chatHistory.offsetHeight;
-          let msgBarStyle = window.getComputedStyle(msgBar);
-          let msgBarPos = msgBarStyle.transform;
-         
-          
-          
-          
-          console.log(msgBarPos); // (1, 0, 0, 1, 0, 350)
-          console.log(chatHeight);
-          if(chatHeight === 450){
-            chatHistory.style.height = "310px";
-            msgBar.style.transform = "translateY(330px)";
-            console.log(chatHistory.offsetHeight);
-          }
-          else if(chatHeight == 330){
-            chatHistory.style.height = "430px";
-            console.log({chatHeight});
-            msgBar.style.transform = "translateY(453px)";
-          }
-          else{
-            console.log('unkown offset: '+chatHeight);
-          }
-        })
-        
-
-    </script>
+    <script src="../animations.js"></script>
+    <script src="chat.js"></script>
   </body>
 </html>
