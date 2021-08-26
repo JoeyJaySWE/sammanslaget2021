@@ -1,5 +1,5 @@
 const npcMsg = [
-    "<p class='npc-bubble'>Tja, är du upptagen?</p>",
+    "Tja, är du upptagen?",
     "<p class='npc-bubble' style='width: 100px;'>Det är svinkallt..!&#128514;</p>",
     "<p class='npc-bubble' style='width: 100px;'>Höst är fan skit! &#127788;</p>",
     "<p class='npc-bubble' style='width: 20px;'>Finns inte plats hos dig? Jag kan inte låna soffan? &#128591;</p>",
@@ -15,9 +15,8 @@ const pcMsg = [
 
 ]
 
-
-const chatHistory = document.querySelector("#chat-history");
-const msgBar = document.querySelector("#messageBar");
+const npcBuble = document.createElement("P");
+npcBuble.classList.add("npc-bubble");
 
 
 
@@ -30,14 +29,14 @@ function addNpcMsg(msg){
 }
 
 setTimeout(() => {
-
-    chatHistory.insertBefore(npcMsg[0], msgBar);
-    let firstMsg = document.querySelector("#chat-history p:first-child");
-    let firstMsgStyle = window.getComputedStyle(firstMsg);
-    let firstMsgPos = firstMsg
-
-    let msgBarStyle = window.getComputedStyle(msgBar);
-          let msgBarPos = msgBarStyle.transform;
+    let firstMsg = npcBuble;
+    firstMsg.innerText = npcMsg[0];
+    chatHistory.insertBefore(firstMsg, msgBar);
+    firstMsg = document.querySelector(".chat-history p:first-child");
+    setTimeout(() =>{
+        firstMsg.style.transform = 'translateY(0px)';
+    }, 4000);
+    console.log("Loaded chat");
 
   }, 2000);
 
