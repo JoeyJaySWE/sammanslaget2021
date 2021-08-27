@@ -153,8 +153,11 @@ unityBtns.addEventListener('click', (e) =>{
             
             
         }
-        else if(e.clientY > 485 && e.clientY < 555){
+        else if(posY> 348 && e.clientY < 413){
             console.log("clicked btn2");
+        }
+        else{
+            console.log("unkown X:"+posX+"\n unkown Y:"+posY);
         }
     }
 })

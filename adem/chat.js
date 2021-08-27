@@ -29,7 +29,7 @@ msgBar.addEventListener('click', function() {
     let msgBarPos = msgBarStyle.transform;
    
     
-    
+    console.log({chatHeight});
     
   //   console.log(msgBarPos); // (1, 0, 0, 1, 0, 350)
   //   console.log(chatHeight);
@@ -40,6 +40,7 @@ msgBar.addEventListener('click', function() {
         chatHistory.style.height = "175px";
         msgBar.style.transform = "translateY(210px)";
       //   console.log(chatHistory.offsetHeight);
+      console.log("chat history preseed.")
         updateScroll(chatHistory);
   
     }
@@ -115,10 +116,15 @@ let PcBubleCounter = 0;
 unityBtns.addEventListener('click', (e) =>{
     console.log(e.clientX);
     console.log(e.clientY);
+    let dim = e.target.getBoundingClientRect();
+    let posX = e.clientX - dim.left;
+    let posY = e.clientY - dim.top;
+    console.log({posX});
+    console.log({posY});
 
-
-    if(e.clientX > 354 && e.clientX < 666){
-        if(e.clientY > 400 && e.clientY < 475){
+    if(posX > 40 && posX < 351){
+        console.log("right size");
+        if(posY> 270 && posY < 335){
             console.log("clicked btn1");
             msgBar.click();
             if(PcBubleCounter <= 4){
@@ -144,8 +150,11 @@ unityBtns.addEventListener('click', (e) =>{
             
             
         }
-        else if(e.clientY > 485 && e.clientY < 555){
+        else if(posY> 348 && e.clientY < 413){
             console.log("clicked btn2");
+        }
+        else{
+            console.log("unkown X:"+posX+"\n unkown Y:"+posY);
         }
     }
 })
