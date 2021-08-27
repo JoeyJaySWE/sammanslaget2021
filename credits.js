@@ -34,6 +34,14 @@ ga.addEventListener('click', function(){
 
 gp.addEventListener('click', function(){
     console.log('clicked gp');
+    articleTitle.textContent = 'Oscar Wilhelmsson , Game Programmer'
+    articleTxt.textContent = `
+    Jag är en av två programmerare och har programmerat grunden i Unity. Det har bland annat innefattat att jag i samverkan med mina kollegor utvecklat användargränssnittet samt flödet i vår interaktiva upplevelse. Den största utmaningen för mig har främst varit att lösa interaktionen mellan Unity (WebGL) och HTML/JavaScript när vi fått upp det på webben. Utöver själva kodningen har jag varit delaktig i storylines och formuleringar. 
+
+    +46(0)704 938072 
+    `;
+    articleInfo.setAttribute('href', 'mailt:karloscarwilhelmsson@gmail.com');
+    articleInfo.textContent = "Kontakt";
 });
 
 mf.addEventListener('click', function(){
