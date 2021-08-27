@@ -108,6 +108,18 @@ setTimeout(() => {
 
   }, 2000);
 
+  function makeShield(){
+    if(!document.querySelector('.shield')){
+
+        let shielded = document.createElement('img');
+        shielded.src = '../assets/shield.png';
+        shielded.classList.add('shield');
+        let unityWrap = document.querySelector('#unity-container');
+        unityWrap.append(shielded);
+        
+    }
+}
+
 
 const unityBtns = document.querySelector("canvas");
 let npsBubleCounter = 1;
@@ -126,6 +138,10 @@ unityBtns.addEventListener('click', (e) =>{
         console.log("right size");
         if(posY> 270 && posY < 335){
             console.log("clicked btn1");
+            if(document.querySelector('.shield')){
+                let shielded = document.querySelector('.shield');
+                shielded.remove();
+            }
             msgBar.click();
             if(PcBubleCounter <= 4){
 
@@ -150,8 +166,9 @@ unityBtns.addEventListener('click', (e) =>{
             
             
         }
-        else if(posY> 348 && e.clientY < 413){
+        else if(posY> 348 && posY < 420){
             console.log("clicked btn2");
+            makeShield();
         }
         else{
             console.log("unkown X:"+posX+"\n unkown Y:"+posY);
