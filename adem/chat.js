@@ -1,34 +1,24 @@
 const npcMsg = [
-    `Hej! Supertack! William har haft
-    såå kul! Underbart att se honom så
-    med sina vänner 🥰`,
-    `Han längtar redan tillbaks`,
-    `Förhoppningsvis kan vi alla tre
-    vara med då`,
-    `Jag vill ju att de ska ha kontakt
-    och sedan ni började vara med
-    känner jag att det någon gång kan
-    bli så 🌻`,
-    `Han vill inte prata om det alls`,
-    `Men jättetack för det här i alla
-    fall!! Hoppas vi ses på lägret
-    nästa år med! 🌻
-    ❤️`
+    `Kan du hjelpa mej?`,
+    `Vad heta när jag på kne o hon seja
+    ja?`,
+    `Min tjej. När ja håla ring o hon
+    seja ja`,
+    `Ja!! Hur ja sega på svenska?`,
+    `Hah, nemen jag redan vara kär! Men
+    tack for do fråga! 😉`,
+    `Jevla svenska språket 😂`
 
 ];
 
 const pcMsg = [
-    `Hej, Maria! Jättekul att
-    höra!`,
-    `Hur går det för er under
-    besöken?`,
-    `Pratar han något med honom
-    under besöken?`,
-    `Ge det tid. Han öppnar sig
-    snart 🌻`,
-    `Det hoppas jag också!!
-    🌻 Och glöm inte
-    julfirandet i år!`
+    `Självklart. Vad är det?`,
+    `En gång till, Adem`,
+    `💍 👩‍🦰 ?`,
+    `"Vill du gifta dig med mig?"`,
+    `Haha! Jag hoppas att hon
+    säger ja!`,
+
 
 
 ]
@@ -43,7 +33,7 @@ msgBar.addEventListener('click', function() {
     
   //   console.log(msgBarPos); // (1, 0, 0, 1, 0, 350)
   //   console.log(chatHeight);
-  if(PcBubleCounter < 5){
+  if(PcBubleCounter < 4){
       
   
     if(chatHeight === 450){
@@ -131,7 +121,7 @@ unityBtns.addEventListener('click', (e) =>{
         if(e.clientY > 400 && e.clientY < 475){
             console.log("clicked btn1");
             msgBar.click();
-            if(PcBubleCounter <= 5){
+            if(PcBubleCounter <= 4){
 
                 addPcMsg(pcMsg[PcBubleCounter]);
                 PcBubleCounter++;
@@ -139,7 +129,7 @@ unityBtns.addEventListener('click', (e) =>{
             else{
                 
             }
-            if(npsBubleCounter <6){
+            if(npsBubleCounter <5){
                 
                 addNpcMsg(npcMsg[npsBubleCounter], 3000);
                 npsBubleCounter++;
@@ -147,11 +137,6 @@ unityBtns.addEventListener('click', (e) =>{
             
             
             console.log({npsBubleCounter});
-            if(npsBubleCounter == 2){
-                addNpcMsg(npcMsg[npsBubleCounter], 6000);
-                npsBubleCounter++;
-                console.log("bonus:"+npsBubleCounter);
-            }
             // if(PcBubleCounter == 3){
             //     addPcMsg(pcMsg[PcBubleCounter]);
             //     PcBubleCounter++;
