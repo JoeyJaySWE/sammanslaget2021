@@ -56,7 +56,7 @@ msgBar.addEventListener('click', function() {
   }
   else{
       const donation = document.querySelector(".donation-buble");
-      donation.style.transform = 'translateX(-50%) translateY(1420px)';
+      donation.style.transform = 'translateX(-50%) translateY(1040px)';
   }
   })
 
@@ -129,7 +129,7 @@ unityBtns.addEventListener('click', (e) =>{
             else{
                 
             }
-            if(npsBubleCounter <5){
+            if(npsBubleCounter <6){
                 
                 addNpcMsg(npcMsg[npsBubleCounter], 3000);
                 npsBubleCounter++;
