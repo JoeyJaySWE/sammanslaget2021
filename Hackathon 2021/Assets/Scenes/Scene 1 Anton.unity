@@ -390,6 +390,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22564580}
   m_CullTransparentMesh: 1
+--- !u!1 &41229354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41229355}
+  - component: {fileID: 41229357}
+  - component: {fileID: 41229356}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &41229355
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41229354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 834915700}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 212.8, y: 2}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &41229356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41229354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e8e659cca78c9ae4389912409205e104, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &41229357
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41229354}
+  m_CullTransparentMesh: 1
 --- !u!1 &71898369
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +731,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113701215}
   m_CullTransparentMesh: 1
+--- !u!1 &145970863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145970864}
+  - component: {fileID: 145970866}
+  - component: {fileID: 145970865}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &145970864
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145970863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1184442197}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 178.6, y: 3.6}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &145970865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145970863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 861b3947acdd57c4fb07d6a2a6e79cf7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &145970866
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145970863}
+  m_CullTransparentMesh: 1
 --- !u!1 &192368667
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +1062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "R\xE4ddningsmissionen ignorerar aldrig n\xE5gon."
+  m_text: "Vi m\xF6ter alltid problemen tillsammans! //R\xE4ddningsmissionen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -1470,7 +1620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ingen plats kvar p\xE5 35:an\r\neller Station Nord, d\xE5?\r"
+  m_text: "Ingen plats kvar p\xE5 35:an eller Station Nord, d\xE5?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -2252,7 +2402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Svara inte)
+  m_text: "L\xF6s det sj\xE4lv"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -2435,6 +2585,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2144307746}
+  - {fileID: 41229355}
   m_Father: {fileID: 1293978229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2609,8 +2760,8 @@ MonoBehaviour:
   m_text: "Det finns alltid hj\xE4lp att f\xE5, om man vet vart man skall g\xE5!
     //R\xE4ddningsmissionen"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
+  m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2673,7 +2824,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &875636221
@@ -3282,7 +3433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Placeholder: R\xE4ddningsmissionen \xE4r b\xE4st"
+  m_text: "Kom ih\xE5g att delaktighet och inkludering skapar f\xF6r\xE4ndring! //R\xE4ddningsmissionen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -3390,6 +3541,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1445107414}
+  - {fileID: 145970864}
   m_Father: {fileID: 1435089870}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3561,7 +3713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Han man hamnat p\xE5\r\ngatan f\xE5r man klara sig sj\xE4lv!"
+  m_text: "Han man hamnat p\xE5 gatan f\xE5r man klara sig sj\xE4lv!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -3866,7 +4018,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Placeholder: R\xE4ddningsmissionen \xE4r b\xE4st"
+  m_text: "Kom ih\xE5g att f\xF6r vissa \xE4r vi den enda m\xE4nskliga kontakten
+    de f\xE5r! //R\xE4ddningsmissionen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -4365,7 +4518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hurs\xE5? Soffsurfar du, lr?\r\n(blinkande smiley)\r"
+  m_text: "Hurs\xE5? Soffsurfar du, lr?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
@@ -5144,7 +5297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE4nker att vi g\xE5r till 35:an\r\ntsm (hj\xE4rt-emoji)"
+  m_text: "T\xE4nker att vi g\xE5r till 35:an tsm"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
