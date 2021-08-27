@@ -2762,7 +2762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vi f\xF6rs\xF6ker alltid inkludera och f\xF6rst\xE5! //R\xE4ddningsmissionen"
+  m_text: "Vi svarar alltid och hj\xE4lper till s\xE5 gott vi kan! //R\xE4ddningsmissionen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}
   m_sharedMaterial: {fileID: -7125086429178960161, guid: 8663a46ffc5c61d428df86b173ee0d24, type: 2}

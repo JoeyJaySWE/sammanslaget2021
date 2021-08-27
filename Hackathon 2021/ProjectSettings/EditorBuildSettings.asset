@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Scene 1 Anton.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
     path: Assets/Scenes/Scene 2 Maria.unity
     guid: 3c536d7d6c607794ea1c8a6ddd90e9fd
+  - enabled: 0
+    path: Assets/Scenes/Scene 3 Adem.unity
+    guid: 875e15692cb4a5046b94a988e06d28ee
   m_configObjects: {}
