@@ -32,7 +32,7 @@ if(PcBubleCounter < 4){
 
   }
   else if(chatHeight == 175){
-      chatHistory.style.height = "430px";
+      chatHistory.style.height = "450px";
     //   console.log({chatHeight});
       msgBar.style.transform = "translateY(453px)";
       updateScroll(chatHistory);
