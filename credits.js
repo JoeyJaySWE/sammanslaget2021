@@ -22,6 +22,14 @@ rm.addEventListener('click', function(){
 
 ga.addEventListener('click', function(){
     console.log('clicked ga');
+    articleTitle.textContent = 'Robin Ekström, Graphical Artist'
+    articleTxt.textContent = `
+    Det är jag som ligger bakom detta projekts visuella aspekt och design såsom mobilen, layout, färgvalen och ikonerna. Med hjälp av gruppens feedback och åsikter sammanslog vi en visuell kommunikation vi är nöjda med inom den tidsramen vi arbetade i.
+    Samt deltog jag i idégenerering för att hjälpa gruppen att ta fram ett intuitivt sätt att visa tre olika historier om hur man kan hjälpa de mer utsatta i samhället, samt hur man snabbt hittar till Yrgo och Räddnigsmissionens hemsidor.
+    Robin.Ekstrom95@hotmail.com
+    `;
+    articleInfo.setAttribute('href', 'https://www.artstation.com/european_robin');
+    articleInfo.textContent = "Portfolio";
 });
 
 gp.addEventListener('click', function(){
@@ -47,7 +55,7 @@ wu.addEventListener('click', function(){
     för att ge en lite bättre inlevelse. Hade jag haft mer tid, hade det säkert kunnat bli ännu bättre.
     `;
     articleInfo.setAttribute('href', 'mailto:joeyjay@joeyjaydigital.com');
-    articleInfo.textContent = "Contact";
+    articleInfo.textContent = "Kontakta";
     console.log(articleTitle.textContent);
     console.log(articleTxt.textContent)
 });
