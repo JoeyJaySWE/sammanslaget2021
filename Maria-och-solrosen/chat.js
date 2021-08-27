@@ -131,7 +131,7 @@ unityBtns.addEventListener('click', (e) =>{
         if(e.clientY > 400 && e.clientY < 475){
             console.log("clicked btn1");
             msgBar.click();
-            if(PcBubleCounter <= 4){
+            if(PcBubleCounter <= 5){
 
                 addPcMsg(pcMsg[PcBubleCounter]);
                 PcBubleCounter++;
@@ -139,7 +139,7 @@ unityBtns.addEventListener('click', (e) =>{
             else{
                 
             }
-            if(npsBubleCounter <5){
+            if(npsBubleCounter <6){
                 
                 addNpcMsg(npcMsg[npsBubleCounter], 3000);
                 npsBubleCounter++;
