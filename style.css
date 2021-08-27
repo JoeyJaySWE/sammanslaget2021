@@ -132,13 +132,14 @@ canvas, .overLay{
     display: block;
     border-radius: 10px;
     padding: 10px;
+    color:#fff;
     align-items: center;
     margin-bottom:40px;
     transition: transform 600ms ease-out;
 }
 
 .npc-bubble{
-    background-color: cyan;
+    background-color:#009392;
     transform: translateY(130px);
     
 }
@@ -148,7 +149,7 @@ canvas, .overLay{
 }
 
 .pc-bubble{
-    background-color: darkcyan;
+    background-color: #e07c3e;
     margin-left: auto;
     text-align: end;
     transform: translateY(40px);
@@ -165,7 +166,7 @@ canvas, .overLay{
     left: 50%;
     line-height: 1.2;
     z-index: 3;
-    transform: translateX(-50%) translateY(-140px);
+    transform: translateX(-50%) translateY(-170px);
     transition: transfrom 2000ms ease-out;
 }
 
