@@ -1,6 +1,16 @@
-if(!document.querySelector('canavas')){
-
+if( navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)){
      
+
+    //  const cureentSite = window.location.href;
+    
+ 
+//  console.log("test");
 console.log(window.location.href);
 
 switch (window.location.href){
@@ -21,6 +31,9 @@ switch (window.location.href){
         break;
 
 }
+}
 
+if(!document.querySelector('canavas')){
 
+    window.location.replace('https://mobil-under-samma-himmel.netlify.app/maria-och-solrosen/index.html');
 }
