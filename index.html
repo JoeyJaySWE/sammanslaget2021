@@ -36,7 +36,7 @@
       <script>
 
         const homelessBtn = document.querySelector('#homeless');
-        const prissonerBtn = document.querySelector('#sunflower');
+        const mariaBtn = document.querySelector('#sunflower');
         const womenBtn = document.querySelector('#women');
         const phoneScreen = document.querySelector('#screen');
         const creditBtn = document.querySelector('#credits');
@@ -71,6 +71,10 @@
             phoneScreen.innerHTML = '';
             // loadTxtMsg('homeless')
             window.location.replace(r00tLnk+'anton35/index.html')
+        })
+
+        mariaBtn.addEventListener('click', function(){
+            window.location.replace(r00tLnk+'maria-och-solresen/index.html')
         })
 
         creditBtn.addEventListener('click', function(){
