@@ -24,14 +24,14 @@ msgBar.addEventListener('click', function() {
 if(PcBubleCounter < 4){
     
 
-  if(chatHeight === 450){
+  if(chatHeight === 430){
       chatHistory.style.height = "175px";
       msgBar.style.transform = "translateY(210px)";
     //   console.log(chatHistory.offsetHeight);
       updateScroll(chatHistory);
 
   }
-  else if(chatHeight == 195){
+  else if(chatHeight == 175){
       chatHistory.style.height = "430px";
     //   console.log({chatHeight});
       msgBar.style.transform = "translateY(453px)";
