@@ -48,7 +48,7 @@ mf.addEventListener('click', function(){
     console.log('clicked mf');
     articleTitle.textContent = 'Julia Sigurdhsson, Manusförfattare'
     articleTxt.textContent = `
-    Jag har varit delaktig i idégenereringsprocessen och skapandet av prototyping wireframes i programvaran figma i syfte att testa klickbar prototyp. Har arbetat tätt tillsammans med manusarbetet för att dels komma på idéer för stories, dels för att iterativt testa hur användare upplever de stories som skapats.  Jonkar2010@skola.goteborg.se Jag har skrivit storyline och manus och arbetat fram karaktärer och spelarens roll tillsammans med UX designer. Tanken var att ge spelaren möjligheten att sätta sig in i karaktärernas miljöer/situationer, genom ledtrådar försöka förstå vad historierna handlar om, utan att förklara för mycket.
+    Jag har skrivit storyline och manus och arbetat fram karaktärer och spelarens roll tillsammans med UX designer. Tanken var att ge spelaren möjligheten att sätta sig in i karaktärernas miljöer/situationer, genom ledtrådar försöka förstå vad historierna handlar om, utan att förklara för mycket.
     `;
     articleInfo.setAttribute('href', '');
     articleInfo.textContent = "";
