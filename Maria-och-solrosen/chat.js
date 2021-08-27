@@ -128,3 +128,10 @@ unityBtns.addEventListener('click', (e) =>{
     }
 })
 
+function updateScroll(elmentPan){
+    setTimeout(()=>{
+
+        elmentPan.scrollTop = elmentPan.scrollHeight;
+    }, 600);
+}
+
