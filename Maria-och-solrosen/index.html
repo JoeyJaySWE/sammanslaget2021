@@ -163,8 +163,13 @@
         });
       };
       document.body.appendChild(script);
+
+      if(!document.querySelector('canvas')){
+        window.location.replace('https://mobil-under-samma-himmel.netlify.app/maria-och-solrosen/index.html');
+      }
     </script>
     <script src="../animations.js"></script>
     <script src="chat.js"></script>
+    <script src="../mobile-checker.js"></script>
   </body>
 </html>
