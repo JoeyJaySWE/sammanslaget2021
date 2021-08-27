@@ -66,7 +66,7 @@ msgBar.addEventListener('click', function() {
   }
   else{
       const donation = document.querySelector(".donation-buble");
-      donation.style.transform = 'translateX(-50%) translateY(780px)';
+      donation.style.transform = 'translateX(-50%) translateY(1420px)';
   }
   })
 
