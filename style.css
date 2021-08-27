@@ -56,7 +56,9 @@ table {
     src: url('assets/fonts/Los-Andes-Lota-Grotesque-Regular.woff');
     font-variant: normal;
 }
-
+*{
+    box-sizing: border-box;
+}
 html{
     font-family: 'Lota';
     font-size: 18px;

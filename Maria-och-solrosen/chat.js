@@ -74,6 +74,7 @@ setTimeout(() => {
     firstMsg = document.querySelector("#msgs p:first-child");
     setTimeout(() =>{
         firstMsg.style.transform = 'translateY(0px)';
+        updateScroll(chatHistory);
     }, 4000);
     console.log("Loaded chat");
 
