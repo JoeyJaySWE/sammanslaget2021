@@ -110,7 +110,7 @@ unityBtns.addEventListener('click', (e) =>{
             
             
             console.log({npsBubleCounter});
-            if(npsBubleCounter == 2 || npsBubleCounter == 4){
+            if(npsBubleCounter == 2){
                 addNpcMsg(npcMsg[npsBubleCounter], 6000);
                 npsBubleCounter++;
                 console.log("bonus:"+npsBubleCounter);
