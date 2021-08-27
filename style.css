@@ -111,7 +111,7 @@ canvas, .overLay{
     display: none;
 }
 .chat-history{
-    height:430px;
+    height:450px;
     /* height: 350px; */
     background-image: url('assets/Background\ Markings.png');
     background-color: #222323;

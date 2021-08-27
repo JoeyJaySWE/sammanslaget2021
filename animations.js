@@ -24,7 +24,7 @@ msgBar.addEventListener('click', function() {
 if(PcBubleCounter < 4){
     
 
-  if(chatHeight === 430){
+  if(chatHeight === 450){
       chatHistory.style.height = "175px";
       msgBar.style.transform = "translateY(210px)";
     //   console.log(chatHistory.offsetHeight);
