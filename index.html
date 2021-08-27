@@ -26,7 +26,7 @@
           <nav>
               <button id='homeless'>Anton 35</button>
               <button id='sunflower'>Maria och Solrosen</button>
-              <button id='women'>Kvinnoverksamheten</button>
+              <button id='adem'>Adem språk</button>
               <button id='credits' style='margin-top:40px;'>Skaparna</button>
           </nav>
           <button class='backBtn'></button>
@@ -37,7 +37,7 @@
 
         const homelessBtn = document.querySelector('#homeless');
         const mariaBtn = document.querySelector('#sunflower');
-        const womenBtn = document.querySelector('#women');
+        const ademBtn = document.querySelector('#adem');
         const phoneScreen = document.querySelector('#screen');
         const creditBtn = document.querySelector('#credits');
         const backBtn = document.querySelector('.backBtn');
@@ -75,6 +75,10 @@
 
         mariaBtn.addEventListener('click', function(){
             window.location.replace(r00tLnk+'maria-och-solrosen/index.html')
+        })
+
+        ademBtn.addEventListener('click', function(){
+            window.location.replace(r00tLnk+'adem/index.html')
         })
 
         creditBtn.addEventListener('click', function(){
