@@ -43,7 +43,7 @@ msgBar.addEventListener('click', function() {
     
   //   console.log(msgBarPos); // (1, 0, 0, 1, 0, 350)
   //   console.log(chatHeight);
-  if(PcBubleCounter < 4){
+  if(PcBubleCounter < 5){
       
   
     if(chatHeight === 450){
@@ -69,7 +69,7 @@ msgBar.addEventListener('click', function() {
       donation.style.transform = 'translateX(-50%) translateY(780px)';
   }
   })
-  
+
 const npcBuble = document.createElement("P");
 npcBuble.classList.add("npc-bubble");
 
