@@ -166,7 +166,7 @@ canvas, .overLay{
     left: 50%;
     line-height: 1.2;
     z-index: 3;
-    transform: translateX(-50%) translateY(-170px);
+    transform: translateX(-50%) translateY(-180px);
     transition: transfrom 2000ms ease-out;
 }
 
