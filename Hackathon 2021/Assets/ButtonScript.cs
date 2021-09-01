@@ -20,15 +20,6 @@ public class ButtonScript : MonoBehaviour
         TurnOnNextButton(0);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("space"))
-        {
-            Debug.Log(index);
-            Debug.Log(knappar[index].name);
-        }
-    }
-
     void TurnOffAllButtons()
     {
         for (int i = 0; i < knappar.Length; i++)
@@ -39,9 +30,6 @@ public class ButtonScript : MonoBehaviour
 
     public void SwitchButtons()
     {
-        Debug.Log(index);
-        Debug.Log(knappar[index].name);
-
         TurnOffButton(index);
         index++;
 
@@ -51,9 +39,6 @@ public class ButtonScript : MonoBehaviour
         }
 
         StartCoroutine(DelayFunction(2f));
-
-        Debug.Log(index);
-        Debug.Log(knappar[index].name);
     }
 
     public IEnumerator DelayFunction(float delayTime)
